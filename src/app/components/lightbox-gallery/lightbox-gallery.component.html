@@ -1,28 +1,44 @@
-<section>
-  <div class="container gal-container">
-    <ng-container *ngFor="let image of images; let i = index">
 
-      <div class="col-lg-6 col-md-4 col-sm-6 co-xs-12 gal-item">
-        <div class="box">
-          <a href="#" data-toggle="modal" [attr.data-target]="'#' + i">
-          <img src="{{imgfolder + image}}">
-        </a>
-          <div class="modal fade" id="{{i}}" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                <div class="modal-body">
-                  <img src="{{imgfolder + image}}">
-                </div>
-                <div class="col-md-12 description">
-                  <h4>Beskrivende tekst her (:</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<div style="margin:200px">
+<section class='galeria'>
+  <input type="radio" id="uno" value="1" name="tractor" checked='checked' />    
+<input type="radio" id="dole" value="2" name="tractor" />      
+<input type="radio" id="tele" value="3" name="tractor" />
+  <article class='card una'>
+    <h2 class='entypo-tag'>Videoer</h2>
+      
+    <ul class='footer'>
 
-    </ng-container>
-  </div>
+    </ul>
+    <label for='dole' class='entypo-left-bold otra'></label>
+    <label for='tele' class='entypo-right-bold otra'></label>
+    <label for='uno' class='entypo-arrows-ccw afin'></label>  
+  </article>
+  
+  <article class='card dos'>
+    <h2 class='entypo-feather'>Skarpe billeder</h2>
+      
+    <ul class='footer'>
+
+    </ul>
+    <label for='tele' class='entypo-left-bold otra'></label>
+    <label for='uno' class='entypo-right-bold otra'></label>
+    <label for='dole' class='entypo-arrows-ccw afin'></label>  
+  </article>
+  
+  <article class='card tres'>
+    <h2 class='entypo-address'>Advancerede drone optagelser, bla bla..</h2>
+      <p>bla bla.. drone dit, drone dat..<br/>
+        stuff stuff stuff<br/>
+        more stuff<br/>
+        stuff mhhmh</p>
+    <ul class='footer'>
+
+    </ul>
+    <label for='uno' class='entypo-left-bold otra'></label>
+    <label for='dole' class='entypo-right-bold otra'></label>
+    <label for='tele' class='entypo-arrows-ccw afin'></label>  
+  </article>
 </section>
+
+</div>
